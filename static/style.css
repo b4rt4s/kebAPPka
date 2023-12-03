@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppings:wght@500display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@600&display=swap');
+
+* { /*style globalne */ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body { /* styl body */ 
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: #f2f2f2;
+}
+
+.wrapper { /* styl searchbara */
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 60px;
+    background: #fff;
+    border-radius: 7px;
+    padding: 10px 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .2);
+
+}
+
+input { /* to co jest wpisane w searchbara */
+    width: 100%;
+    height: 100%;
+    color: #271212;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+i { /* ikonka lupki w searchbarze */
+    font-size: 20px;
+    color: #000000;
+    cursor: pointer;
+}
+
+li, button { /* styl list i przyciskow */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+a { /* styl hiperlaczy */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #000000;
+    text-decoration: none;
+}
+
+header { /* czesc naglowkowa */
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
+    position: sticky;
+    top: 0;
+    background: #aa3939;
+    border-radius: 0 0 30px 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .3);
+}
+
+footer { /* czesc stopki */
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 5%;
+    position: sticky;
+    top: 0;
+    background: #bf7677;
+    border-radius: 30px 30px 0 0;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .3);
+}
+
+.logo { /* logo */
+    height: 120px;
+    width: auto;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+button { /* przyciski (zaloguj, zarejestuj) */
+    padding: 9px 25px;
+    background-color: #550000;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover{ /* zmiana koloru po najechaniu kursorem*/
+    background-color: #d46a6a;
+}
+
+.button_container { /* konterener na przyciski */
+    display: flex;
+    align-items: center;
+}
+
+.cta { /* call to action przyciski*/
+    margin-right: 5px;
+}
+
+.cta:last-child { /* ostatni eelement w grupie cta*/
+    margin-left: 20px;
+}
+
+.log_in { /* zaloguj sie */
+    background-color: #ffa9aa;
+    color: #090606;
+}
+
+.website_name { /* nazwa strony kebAPPka */
+    margin-left: 5px;
+    font-size: 30px;
+    color: #feaaaa;
+    font-family: 'Merienda', cursive;
+    text-shadow: 
+        -1px -1px 0px #fff,  
+         1px -1px 0px #fff,
+        -1px  1px 0px #fff,
+         1px  1px 0px #fff;
+}
+
+.box-container { /* kontener na trzy kwadraty na dole */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.box { /* kwadraty na dole */
+    width: 200px;
+    height: 100px; 
+    background-color: #f6f6f6; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3); 
+    margin: 0 10px;
+}
+/*                                                       zarejestruj_sie.html                                                                                  */
+
+.register-header {
+    padding: 60px 10%;
+    background-color: #271212;
+}
+
+.calosc {
+    max-width: 300px; /* Adjust the width as needed */
+    margin: auto;
+    padding: 20px;
+    background-color: #fff; /* Or any color that fits your design */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional */
+}
+
+.register-box {
+    display: flex;
+    flex-direction: column;
+    gap: 7px; /* Space between fields */
+}
+
+.register-field input {
+    width: 100%;
+    padding: 7px;
+    border: 1px solid #ccc; /* Border color */
+    border-radius: 5px;
+    margin-top: 2px;
+}
+
+form h1 {
+    text-align: center;
+    color: #271212; /* Adjust the color as needed */
+    margin-top: 10px; /* Reduced top margin */
+    margin-bottom: 10px;
+}
