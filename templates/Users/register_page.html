@@ -1,0 +1,47 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kebAPPka - Zarejestruj się!</title>
+    <link rel="stylesheet" href="{% static '../static/style.css' %}">
+</head>
+
+<body>
+    <header class="register_header">
+
+    </header>
+    <div class="calosc">
+        <h2>Registration Form</h2>
+        <form action="{% url 'register_action' %}" method="post">
+            {% csrf_token %}
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username">
+    
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+    
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password">
+    
+            <label for="phone_number">Phone Number</label>
+            <input type="text" id="phone_number" name="phone_number">
+    
+            <label for="authentication_type">Authentication Type</label>
+            <select id="authentication_type" name="authentication_type">
+                <option value="email">Email</option>
+                <option value="phone">Phone</option>
+            </select>
+    
+            <input type="submit" value="Register">
+        </form>
+    </div>
+
+    <footer>
+        
+    </footer>
+
+</body>
+</html>
