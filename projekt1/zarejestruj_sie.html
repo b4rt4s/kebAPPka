@@ -1,55 +1,86 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>kebAPPka - Zarejestruj się!</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>kebAPPka - Zarejestruj się!</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
 
-<body>
-    <header class="register_header">
+    <body>
+        <header class="register_header">
+            <span class="register_header">Zarejestruj się</span>
+        </header>
+        <div class="calosc">
+            <form action="">
+                <div class="register-box">
+                    <div class="register-field">
+                        <input type="text" placeholder="Nazwa użytkownika" required>
+                    </div>
 
-    </header>
-    <div class="calosc">
-        <form action="">
-            <h1>Zarejestruj się</h1>
+                    <!--<div class="register-field">
+                        <input type="text" placeholder="Nazwisko" required>
+                    </div>
 
-            <div class="register-box">
-                <div class="register-field">
-                    <input type="text" placeholder="Nazwa użytkownika" required>
+                    <div class="register-field">
+                        <input type="text" placeholder="Imię" required>
+                    </div> -->
+
+                    <div class="register-field">
+                        <input type="text" placeholder="Adres e-mail" required>
+                    </div>
+
+                    <div class="register-field">
+                        <input type="text" placeholder="Numer telefonu" required>
+                    </div>
+
+                    <div class="register-field">
+                        <input type="text" placeholder="Hasło" required>
+                    </div>
+
+                    <div class="register-field">
+                        <input type="text" placeholder="Powtórz hasło" required>
+                    </div>
+
+                    <div class="register-field">
+                        <label for="authenticationType">Typ uwierzytelnienia:</label>
+                        <select id="authenticationType" name="authenticationType" required>
+                            <option value="email">Adres e-mail</option>
+                            <option value="phone">Numer telefonu</option>
+                        </select>
+                    </div>
+
+                    <div class="checkbox_group">
+                        <div class="checkbox_item">
+                            <label for="checkbox1">Tak, chcę otrzymywać Newsletter</label>
+                            <input type="checkbox" id="checkbox1" name="checkbox1">
+                        </div>
+                        <div class="checkbox_item">
+                            <label for="checkbox2">Akceptuję regulamin korzystania z Portalu</label>
+                            <input type="checkbox" id="checkbox2" name="checkbox2">
+                        </div>
+                        <div class="checkbox_item">
+                            <label for="checkbox3">Wyrażam zgodę na przetwarzanie moich danych osobowych</label>
+                            <input type="checkbox" id="checkbox3" name="checkbox3">
+                        </div>
+            
+                    </div>
                 </div>
-
-                <div class="register-field">
-                    <input type="text" placeholder="Nazwisko" required>
+                
+                <div class="submit-container">
+                    <button type="submit" class="submit-button">Zarejestruj się!</button>
+                    <hr>
+                    <div class="federational_buttons">
+                        <button type="button" class="social_button_facebook"><img src="facebook.png" alt="logo_facebook" class="button_logo">Zarejestruj się przez Facebook</button>
+                        <button type="button" class="social_button_google"><img src="google.png" alt="logo_google" class="button_logo">Zarejestruj się przez Google</button>
+                    </div>
                 </div>
+            </form>
+        </div>
 
-                <div class="register-field">
-                    <input type="text" placeholder="Imię" required>
-                </div>
+        <footer class="register_footer">
+            
+        </footer>
 
-                <div class="register-field">
-                    <input type="text" placeholder="Adres e-mail" required>
-                </div>
-
-                <div class="register-field">
-                    <input type="text" placeholder="Numer telefonu" required>
-                </div>
-
-                <div class="register-field">
-                    <input type="text" placeholder="Hasło" required>
-                </div>
-
-                <div class="register-field">
-                    <input type="text" placeholder="Powtórz hasło" required>
-                </div>
-            </div>
-       </form>
-    </div>
-
-    <footer>
-        
-    </footer>
-
-</body>
+    </body>
 </html>
