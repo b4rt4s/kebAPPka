@@ -27,8 +27,11 @@ class CustomUser(AbstractUser):
     last_name = None
     is_restricted = models.BooleanField(default=False, null=True)
     phone_number = models.CharField(max_length=20)
-    location_consent = models.BooleanField(default=False)
-    marketing_consent = models.BooleanField(default=False)
+    newsletter_consent = models.BooleanField(default=False)
+    terms_consent = models.BooleanField(default=False)
+    data_processing_consent = models.BooleanField(default=False)
+    # location_consent = models.BooleanField(default=False)
+    # marketing_consent = models.BooleanField(default=False)
 
     AUTHENTICATION_TYPE_CHOICES = (
         ('email', 'Email'),

@@ -161,37 +161,171 @@ button:hover{ /* zmiana koloru po najechaniu kursorem*/
 }
 /*                                                       zarejestruj_sie.html                                                                                  */
 
-.register-header {
-    padding: 60px 10%;
-    background-color: #271212;
+.register_header { /* naglowek */
+    padding: 5px 10%;
+    background-color: #ab3939;
+    width: 100%;
+    min-height: 40px;
 }
 
-.calosc {
-    max-width: 300px; /* Adjust the width as needed */
+.register_footer { /* stopka */
+    padding: 20px 10%;
+    background-color: #bf7778;
+    width: 100%;
+    min-height: 30px;
+}
+
+.calosc { /* cale duze pole rejestracji */
+    max-width: 700px; 
     margin: auto;
     padding: 20px;
-    background-color: #fff; /* Or any color that fits your design */
+    background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
-.register-box {
+.register-box { /* poszczegolne pola do rejestracji */
     display: flex;
     flex-direction: column;
-    gap: 7px; /* Space between fields */
+    gap: 7px; 
+    width: 80%;
+    margin: auto;
 }
 
-.register-field input {
+.register-field input { /* teksty w polach */
     width: 100%;
     padding: 7px;
-    border: 1px solid #ccc; /* Border color */
+    border: 1px solid #ccc; 
     border-radius: 5px;
     margin-top: 2px;
+    font-size: 15px;
 }
 
-form h1 {
+form h1 { /* nie pamietam co to */
     text-align: center;
-    color: #271212; /* Adjust the color as needed */
-    margin-top: 10px; /* Reduced top margin */
+    color: #271212; 
+    margin-top: 10px;
     margin-bottom: 10px;
+}
+
+.checkbox_group { /* checkboxy, grupa */
+    display: flex;
+    flex-direction: column;
+}
+
+.checkbox_item { /* checkboxy */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px; 
+}
+
+.checkbox_item label { /* podpisy przy checkboxach */
+    flex-grow: 1;
+    font-size: 13px;
+}
+
+.submit-container { /* kontener na przyciski */
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; 
+}
+
+.submit-button { /* przycisk "zarejestuj sie" */
+    padding: 10px 20px;
+    background-color: #550000;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.submit-button:hover { /* animacja przycisku "zarejestruj sie" */
+    background-color: #d46a6a;
+}
+
+.register_header { /* czcionka i tekst w naglowku strony */
+    text-align: center;
+    margin-left: 5px;
+    font-size: 24px;
+    color: #feaaaa;
+    font-family: 'Merienda', cursive;
+    text-shadow: 
+        -1px -1px 0px #fff,  
+         1px -1px 0px #fff,
+        -1px  1px 0px #fff,
+         1px  1px 0px #fff;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.submit-container hr { /* linia po przycisku "zarejestruj sie" */
+    border: none;
+    height: 0.5px;
+    background-color: #333;
+    width: 100%; 
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.federational_buttons { /* przyciski logowania federacyjnego */
+    display: flex;
+    justify-content: center;
+    gap: 10px; 
+}
+
+.social_button_facebook { /* przycisk "Zarejestruj sie przez Facebook" */
+    padding: 10px 20px;
+    background-color:#f6f6f6; 
+    color: black;
+    border: 1px solid #919191;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.social_button_facebook:hover { /* animacja przycisku "Zarejestruj sie przez Facebook" */
+    background-color: #1877F2;
+    color: white;
+}
+
+.social_button_google { /* przycisk "Zarejestruj sie przez Google" */
+    padding: 10px 20px;
+    background-color: #f6f6f6;
+    color: black;
+    border: 1px solid #919191;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px; 
+}
+
+.social_button_google:hover { /* animacja przycisku "Zarejestruj się przez Google" */
+    background-color: #DB4437;
+    color: white;
+}
+
+.federational_buttons img.button_logo { /* rozmiar logo przy przyciskach do logowania federacyjnego */
+    height: 20px; 
+    width: auto; 
+    margin-right: 5px; 
+}
+
+.register-field select { /* styl pola do wyboru typu autoryzacji */
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 2px;
+    font-size: 16px;
+    background-color: white;
+    -webkit-appearance: none; 
+    -moz-appearance: none; 
+    appearance: none; 
 }
